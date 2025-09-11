@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.img1 {
+    background-image: url(sea.jpg);
+    background-attachment: fixed; /* background fix */
+    background-size: cover;
+    height: 100vh;                  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 50vh;
+}
+
+.img2 {
+    background-image: url(mountain.jpg);
+    background-attachment: fixed; /* background fix */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

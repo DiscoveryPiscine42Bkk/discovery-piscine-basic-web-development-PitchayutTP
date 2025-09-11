@@ -1,0 +1,16 @@
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #26a69a;
+    background-color: #f0fdfa;
+    font-size: 16px;
+    color: #004d40;
+}
+

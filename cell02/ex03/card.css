@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+table {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+    font-weight: bold;
+}
+
+td {
+    padding: 5px;
+}
+
+td img.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffb6b9;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff6f61;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

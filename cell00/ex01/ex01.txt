@@ -1,0 +1,3 @@
+echo "Z" >> z.txt
+
+cat z.txt
