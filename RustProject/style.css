@@ -1,28 +1,21 @@
-/* generate by chatgpt */
-/* must be corrected */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    background: linear-gradient(135deg, #FFD7D7, #D7F0FF);
+    background: url("https://media.istockphoto.com/id/2157429358/th/%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD/space-background-loop-animation-%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD-4k-%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%9F%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%AD%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A8.jpg?b=1&s=640x640&k=20&c=X0TJOMX-d4EeO-gGC7sak36EJXl6h4FoQYKfCpBF4Qg=") 
+        no-repeat center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 60px;
     margin-bottom: 50px;
-    color: #ff6f91;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    color: #cacaca;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .profile {
@@ -33,30 +26,30 @@ h1 {
 }
 
 .profile div {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
-    padding: 20px;
+    background: rgba(72, 72, 72, 0.5);
+    border-radius: 15px;
+    padding: 25px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
 }
 
 .profile div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(145, 145, 145, 0.5);
 }
 
 .profile img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #fff;
+    border: 3px solid #717171;
 }
 
 .profile p {
     font-size: 1.1rem;
-    font-weight: 500;
-    color: #555;
+    font-weight: bold;
+    color: #f0f0f0;
 }
