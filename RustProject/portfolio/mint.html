@@ -1,1 +1,108 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio – Kamonchanok</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #b91c1c;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  header img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+  }
+  h1 { margin: 1rem 0 0; }
+  h2 {
+    border-left: 6px solid #b91c1c;
+    padding-left: 8px;
+    margin-top: 2rem;
+  }
+  .section {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  @media(min-width:600px){
+    .grid { grid-template-columns: repeat(3,1fr); }
+  }
+  .grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  footer {
+    text-align: center;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/mint-profile.jpg" alt="Mint profile" />
+  <h1>กมลชนก แสนคำยอ (มิ้น)</h1>
+  <p>คณะวิทยาศาสตร์ – สถิติประยุกต์และการวิเคราะห์ข้อมูล</p>
+</header>
+
+<div class="section">
+  <h2>เกี่ยวกับฉัน</h2>
+  <div class="card">
+    <p><b>วันเกิด:</b> 31 ต.ค. 2548 (อายุ 20 ปี)</p>
+    <p><b>งานอดิเรก:</b> ดูหนัง ฟังเพลง ออกกำลังกาย</p>
+    <p><b>ความสามารถพิเศษ:</b> นักกีฬายูยิตสู</p>
+  </div>
+
+  <h2>กิจกรรม</h2>
+  <div class="grid">
+    <img src="assets/activity1.jpg" alt="">
+    <img src="assets/activity2.jpg" alt="">
+    <img src="assets/activity3.jpg" alt="">
+  </div>
+
+  <h2>เกียรติบัตร</h2>
+  <div class="grid">
+    <img src="assets/cert1.jpg" alt="">
+    <img src="assets/cert2.jpg" alt="">
+    <img src="assets/cert3.jpg" alt="">
+  </div>
+
+  <h2>ติดต่อ</h2>
+  <div class="card">
+    <p>📧 mint.210590@gmail.com</p>
+    <p>📷 Instagram: @mmint_san</p>
+    <p>📘 Facebook: Mint Kamonchanok</p>
+  </div>
+</div>
+
+<footer>© 2025 Kamonchanok S.</footer>
+</body>
+</html>
 
