@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+
+<body>
+    <input type="number" id="left" placeholder="Left number">
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="right" placeholder="Right number">
+    <button id="calc">Try me!</button>
+
+    <script>
+        const left = document.getElementById("left");
+        const right = document.getElementById("right");
+        const op = document.getElementById("op");
+        const calc = document.getElementById("calc");
+
+        calc.onclick = () => {
+            const a = parseInt(left.value);
+            const b = parseInt(right.value);
+
+            if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
+                alert("Error :(");
+            }
+            else if ((op.value === "/" || op.value === "%") && b === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+            }
+            else {
+                let res;
+                if (op.value === "+") {
+                    res = a + b;
+                } else if (op.value === "-") {
+                    res = a - b;
+                } else if (op.value === "*") {
+                    res = a * b;
+                } else if (op.value === "/") {
+                    res = a / b;
+                } else if (op.value === "%") {
+                    res = a % b;
+                }
+
+                alert(res);
+                console.log(res);
+            }
+        }
+
+        setInterval(() => alert("Please, use me..."), 30000);
+    </script>
+</body>
+
+</html>

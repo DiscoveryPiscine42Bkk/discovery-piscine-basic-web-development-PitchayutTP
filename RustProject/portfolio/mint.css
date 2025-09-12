@@ -1,0 +1,67 @@
+:root{
+  --red:#b91c1c;       
+  --ink:#1f2937;      
+  --paper:#fff;        
+  --muted:#6b7280;     
+  --ring:rgba(185,28,28,.25);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+img{max-width:100%;display:block}
+
+html{scroll-behavior:smooth}
+.nav{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:saturate(160%) blur(6px);
+  background:linear-gradient(90deg, #fff8f8ee, #fffefecc);
+  border-bottom:1px solid #f1c9c9;
+}
+.nav-inner{
+  max-width:1000px;margin:auto;display:flex;gap:1rem;align-items:center;
+  padding:.6rem 1rem;
+}
+.brand{font-weight:800;color:var(--red)}
+.nav a{color:var(--ink);text-decoration:none;padding:.4rem .7rem;border-radius:.6rem}
+.nav a:hover{background:#fde2e2;color:var(--red)}
+
+header{
+  background: radial-gradient(60% 80% at 50% -20%, #ffd1d1 0, #fff0f0 40%, #fff 70%),
+              linear-gradient(180deg, #fff4f4 0, #ffffff 40%);
+  border-bottom:1px solid #ffe1e1;
+}
+.hero{
+  max-width:1000px;margin:auto;padding:3rem 1rem 2rem;text-align:center;
+}
+.avatar{
+  width:220px;height:220px;margin:0 auto 1rem;border-radius:50%;
+  object-fit:cover;border:8px solid #fff;box-shadow:0 8px 30px var(--ring);
+  transition:transform .25s ease;
+}
+.avatar:hover{transform:scale(1.03)}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2rem 0;color:#111}
+.subtitle{color:var(--muted);margin:.2rem 0 0}
+
+section{max-width:1000px;margin:0 auto;padding:2rem 1rem}
+h2{
+  font-size:clamp(1.3rem,3vw,1.6rem);
+  border-left:8px solid var(--red); padding-left:.75rem;margin:0 0 1rem;
+}
+.card{
+  background:#fff;border:1px solid #f1c9c9;border-radius:14px;padding:1rem;
+  box-shadow:0 6px 18px -8px var(--ring);transition:transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-2px);box-shadow:0 16px 28px -12px var(--ring)}
+.muted{color:var(--muted)}
+
+.grid{display:grid;gap:1rem}
+@media(min-width:640px){ .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+
+.zoom{
+  border-radius:12px; overflow:hidden;
+  border:1px solid #f4c8c8;
+  transition:transform .18s ease;
+}
+.zoom:hover{transform:scale(1.01)}
+
+footer{border-top:1px solid #ffe1e1;background:#fff6f6;color:#7a0d0d;text-align:center;padding:1rem}
