@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgroud</title>
+    <link rel="stylesheet" href="background.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <button id="changeBtn">Click Me!!!</button>
+
+    <script>
+        $("#changeBtn").on("click", function () {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+
+            const randombg = `rgb(${r}, ${g}, ${b})`;
+
+            $("body").css("background-color", randombg);
+        });
+    </script>
+</body>
+
+</html>
